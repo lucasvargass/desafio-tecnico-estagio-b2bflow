@@ -14,4 +14,5 @@ def main():
     supabase_key = os.getenv("SUPABASE_KEY")
     zapi_url = f"https://api.z-api.io/instances/{os.getenv('ZAPI_INSTANCE_ID')}/token/{os.getenv('ZAPI_INSTANCE_TOKEN')}/send-text"
 
-    
+    # Busca Repository
+    contatos = buscar_contatos(supabase_url, supabase_key, limite=3)

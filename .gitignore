@@ -1,0 +1,51 @@
+# VARIÁVEIS DE AMBIENTE (O MAIS IMPORTANTE!)
+.env
+.env.local
+.env.*.local
+.venv/
+
+# PYTHON (Cache e bytecode)
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.whl
+
+# TESTES E COBERTURA
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# EDITORES E IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# VIRTUAL ENVIRONMENT (se você usar)
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# LOGS (Não precisa versionar logs locais)
+*.log
+
+# ARQUIVOS DE CONFIGURAÇÃO LOCAL
+*.local

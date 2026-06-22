@@ -1,9 +1,9 @@
 import logging
 import requests
 
-def enviar_mensagem(zapi_url, phome, nome):
+def enviar_mensagem(zapi_url, phone, nome):
     "Camada Service: Isolamento da logica de envio."
-    if not phome:
+    if not phone:
         return False
     message = f"Olá, {nome} tudo bem com você?"
     payload = {"phone": phone, "message": message}

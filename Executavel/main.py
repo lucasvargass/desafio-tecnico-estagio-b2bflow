@@ -16,3 +16,10 @@ def main():
 
     # Busca Repository
     contatos = buscar_contatos(supabase_url, supabase_key, limite=3)
+
+    # Processamento e o envio (Service)
+    for c in contatos:
+        enviar_mensagem(zapi_url, c.get("numero"), c.get("nome_completo", "cliente"))
+
+if __name__ == "__main__":
+    main()
